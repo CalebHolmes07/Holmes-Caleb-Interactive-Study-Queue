@@ -1,0 +1,93 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f7;
+    margin: 0;
+    padding: 30px;
+}
+
+main {
+    max-width: 600px;
+    margin: auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    color: #555;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+input, select, button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #2459a6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #173e78;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: #eef2f7;
+    border-radius: 5px;
+}
+
+li.completed span {
+    text-decoration: line-through;
+    color: gray;
+}
+
+li.high {
+    border-left: 5px solid #d97706;
+}
+
+.task-buttons {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.task-buttons button {
+    font-size: 13px;
+}
+
+@media (max-width: 500px) {
+    body {
+        padding: 10px;
+    }
+
+    li {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

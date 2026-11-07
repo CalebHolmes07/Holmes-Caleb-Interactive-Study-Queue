@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Study Queue</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main>
+        <h1>Interactive Study Queue</h1>
+        <p>Add tasks and organize your study schedule.</p>
+
+        <form id="taskForm">
+            <label for="taskInput">Study Task</label>
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter a study task"
+                required
+            >
+
+            <label for="priorityInput">Priority</label>
+            <select id="priorityInput">
+                <option value="normal">Normal</option>
+                <option value="high">High</option>
+            </select>
+
+            <button type="submit">Add Task</button>
+        </form>
+
+        <section>
+            <label for="filterSelect">Filter Tasks</label>
+            <select id="filterSelect">
+                <option value="all">All Tasks</option>
+                <option value="active">Active</option>
+                <option value="completed">Completed</option>
+            </select>
+        </section>
+
+        <ul id="taskList"></ul>
+
+        <p id="taskCount"></p>
+    </main>
+
+</body>
+</html>
